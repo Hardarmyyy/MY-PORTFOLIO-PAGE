@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amike | Personal Portfolio WordPress Theme Preview - ThemeForest</title>
-    <link rel="icon" href="images/amike navbar logo.png">
+    <title> Adams Adeyemo | Personal Portfolio</title>
+    <link rel="icon" href="images/download.png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/7ac5007c24.js" crossorigin="anonymous"></script>
@@ -15,33 +15,51 @@
 </head>
 <body>
 
-    <header>
-
-        <nav class="nav_fixed">
-
-            <img src="images/envato market image.svg" alt="Envato brand logo">
-
-            <a href="">Buy now</a> 
-
-        </nav> <!-- .nav_fixed -->
+    <header id="navigation">
 
         <nav class="nav_menu">
 
-            <img src="images/amike navbar logo.png" alt="Amike brand logo">
+            <div class="nav_heading">
+                <h1> ADAMS </h1>
+            </div>
 
             <div class="nav_links">
 
-                <a href="#home">Home</a>
-                <a href="#service">Services</a>
+                <a href="#home"> Home</a>
                 <a href="#about">About</a>
                 <a href="#skill">Skills</a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="#blog">Blog</a>
                 <a href="#contact">Contact</a>
 
             </div> 
 
         </nav> <!-- .nav_menu -->
+
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#home" class="closeHome"> <i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="#about" class="closeAbout"> <i class="fa fa-fw fa-user"></i> About</a>
+                <a href="#skill" class="closeSkill"> <i class="fa fa-fw fa-wrench"></i> Skills</a>
+                <a href="#portfolio" class="closePortfolio"> <i class="fa fa-briefcase"></i> Portfolio</a>
+                <a href="#contact" class="closeContact"> <i class="fa fa-fw fa-envelope"></i> Contact</a>
+            </div>
+        
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <div class="menu-icon-container">
+            <div class="menu-icon">
+                <span class="menu-icon-bar"></span>
+                <span class="menu-icon-bar"></span>
+                <span class="menu-icon-bar"></span>
+            </div>
+        </div>
         
     </header>
 
@@ -53,29 +71,23 @@
 
                 <div class="home_content">
 
-                    <div class="icon_links">
-
-                        <a href=""><i class="fa fa-facebook-f"></i></a>
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-pinterest"></i></a>
-                        <a href=""><i class="fa fa-instagram"></i></a>
-                        <a href=""><i class="fa fa-behance"></i></a>
-
-                    </div> 
-
                     <div class="home_bio">
 
-                        <h1>I am Jonathan Doe</h1>
+                        <div class="icon">
 
-                        <p>i'm Jonathan, professional web developer with long time experience in this field</p>
+                            <a href="https://www.linkedin.com/in/adams-adeyemo-0b7a55220/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        
+                        </div>
+
+                        <h1>I am Adams Adeyemo</h1>
+
+                        <p>I'm a professional web developer that possess a passion for crafting innovative and visually captivating web solutions.</p>
 
                     </div>
 
                     <div class="home_btn">
 
-                        <a href="">My Portfolio</a>
-                        
-                        <i class="fa fa-play"></i>
+                        <a href="https://drive.google.com/file/d/1OHm_vJtlBqlXPlYNqEgSzdRd5CSwk8bD/view?usp=sharing" download>My Resume</a>
 
                     </div> 
 
@@ -83,7 +95,7 @@
 
                 <div class="home_img">
 
-                        <img src="images/Amike home photo.png" alt="portrait photo">
+                        <img src="images/my-portrait.jpeg" alt="portrait photo">
 
                 </div> <!-- .home_img -->  
             
@@ -91,93 +103,13 @@
 
         </section> <!-- #home -->
 
-        <section id="service">
-
-            <div class="service_center">
-
-                <p class="sub_title">services</p>
-
-                <h1> My Services</h1>
-
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-
-            </div> <!-- .service_center -->
-
-            <div class="border_bottom"></div> <!-- Add a centralized border bottom here  -->
-
-            <div class="service_container">
-
-                <div class="tile"> 
-
-                    <i class="fa fa-github"></i>
-
-                    <h2>Web Development</h2>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
-
-                </div>
-
-                <div class="tile">
-
-                    <i class="fa fa-codepen"></i>
-
-                    <h2>Web Design</h2>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
-
-                </div>
-
-                <div class="tile">
-
-                    <i class='fas fa-file-video'></i>
-
-                    <h2>Video Editing</h2>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
-
-                </div>
-
-                <div class="tile">
-
-                    <i class="fa fa-camera"></i>
-
-                    <h2>Photography</h2>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
-
-                </div>
-
-                <div class="tile">
-
-                    <i class="fa fa-apple"></i>
-
-                    <h2>App Developing</h2>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
-
-                </div>
-
-                <div class="tile">
-
-                    <i class="fa-brands fa-yoast"></i>
-
-                    <h2>SEO Expart</h2>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
-
-                </div>
-
-            </div> <!-- .service_container -->
-
-        </section> <!-- #service -->
-
         <section id="about">
 
             <div class="about_center">
 
                 <h1>About Me</h1>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
+                <p>My journey in the world of web development has been marked by a relentless pursuit of excellence, a keen eye for design intricacies, and a commitment to delivering seamless user experiences.</p>
 
             </div> <!-- .about_center -->
 
@@ -185,47 +117,13 @@
 
             <div class="about_container">
 
-                <div class="about_img">
-
-                    <img src="images/amike about photo.png" alt="portrait photo">
-
-                </div>
-
                 <div class="about_content">
 
-                    <h2>Hi There</h2>
+                    <p>With a solid foundation in JavaScript and MERN stack (MongoDB, Express.js, React, Node.js), I thrive in crafting robust and feature-rich applications that seamlessly integrate front-end and back-end functionalities.</p>
 
-                    <p>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis</p>
+                    <div class="border_bottom"></div> <!-- Add a centralized border bottom here  -->
 
-                    <p>nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis porta sem turpis quis leo. Nulla in feugiat elit</p>
-
-                    <div class="bio_cont">
-
-                        <div class="bio">
-
-                            <p class="bio_data">Name: </p>
-
-                            <p>Jonathan Doe</p>
-                            <br>
-                            <p class="bio_data">Email: </p>
-
-                            <p>example@domain.com</p>
-
-                        </div>
-
-                        <div class="bio">
-
-                            <p class="bio_data">Phone: </p>
-
-                            <p>+1 023 454 345</p>
-                            <br>
-                            <p class="bio_data">LinkedIn: </p>
-
-                            <p>Jonathan_123</p>
-
-                        </div>
-
-                    </div> <!-- .bio_cont  -->
+                    <p>In every project, I approach challenges with a solution-oriented mindset, seeking opportunities to optimize performance, enhance functionality, and streamline user interactions. My proficiency in responsive design ensures that every user, across devices, enjoys a consistent and engaging experience.</p>
 
                 </div> <!-- .about_content  -->
 
@@ -241,17 +139,32 @@
 
                     <p class="sub_title">I'M EXPERT ON</p>
 
-                    <h1>Let's Work <br> Together</h1>
+                    <h1>Let's Work Together</h1>
 
-                    <p>Phasellus accumsan scelerisque dolor, quis mattis justo bibendum non. Nulla sollicitudin turpis in enim elementum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+                    <p>I am a proactive communicator who believes that effective collaboration fuels innovation and excellence. My dedication to personal growth fuels my continuous learning journey. Staying up-to-date with the latest industry trends and technologies, I am dedicated to honing my skills to provide innovative solutions that transcend expectations.</p>
 
-                    <a href="">Hire Me Now</a> 
+                    <a href="#contact">Hire Me Now</a> 
 
                 </div>
 
                 <div class="skill_list">
 
-                    <div>Node JS</div> 
+                    <div class="skill_set">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+                    </div> 
+
+                    <span class="skill_rating nil">90%</span>
+
+                    <div class="skill_list_cont">
+                        <div class="html"></div>
+                    </div>
+
+                    <div>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
+                    </div> 
 
                     <span class="skill_rating one">88%</span>
 
@@ -259,7 +172,10 @@
                         <div class="node"></div>
                     </div>
 
-                    <div>Python</div>
+                    <div>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="Express" width="40" height="40"/>&nbsp;
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
+                    </div>
 
                     <span class="skill_rating two">81%</span>
 
@@ -267,15 +183,20 @@
                         <div class="python"></div>
                     </div>
 
-                    <div>Laravel</div>
+                    <div>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" title="MongoDB" alt="MongoDB" width="40" height="40"/>&nbsp;
+                    </div>
 
-                    <span class="skill_rating three">70%</span>
+                    <span class="skill_rating three">78%</span>
 
                     <div class="skill_list_cont">
                         <div class="laravel"></div>
                     </div>
 
-                    <div>SEO</div>
+                    <div>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+                    </div>
 
                     <span class="skill_rating four">90%</span>
 
@@ -298,386 +219,134 @@
                     <h1>Portfolio <br>
                         Showcase</h1>
 
-                    <p>We're a WordPress Theme Development company . With more than ten years of knowledge and expertise.</p>
-
                     <div class="border_bottom"></div> <!-- Add a centralized border bottom here  -->
 
                 </div> <!-- .portfolio_content  -->
 
-                <div class="portfolio_service">
-
-                    <a href="" class="marked">All Works</a>
-
-                    <a href="">Art Direction</a>
-
-                    <a href="">Branding</a>
-
-                    <a href="">Design</a>
-
-                    <a href="">Web</a>
-
-                </div>
-
                 <div class="portfolio_photo_cont">
 
-                    <img class="one" src="images/amike work 1.jpg" alt="photo 1">
+                    <div class="one">
 
-                    <img class="two" src="images/amike work 4.jpg" alt="photo 2">
+                        <img src="images/picknpay.jpeg" alt="pick-n-pay-app">
 
-                    <img class="three" src="images/amike work 6.jpg" alt="photo 3">
+                        <ul class="picknpay">
+                            <li> <a href="https://pick-n-pay-app.vercel.app/" target="_blank"> VIEW LIVE </a> </li>
+                            <li> <a href="https://github.com/Hardarmyyy/pick-n-pay-app" target="_blank"> SOURCE CODE </a> </li>
+                        </ul>
 
-                    <img class="four" src="images/amike work 2.jpg" alt="photo 4">
+                        <div class="project pp">
 
-                    <img class="five" src="images/amike work 5.jpg" alt="photo 5">
+                            <div class="projectInfo">
+                                <p>
+                                    A comprehensive multi-user fletch application for buyers and sellers. where users can create, read, update, and delete (CRUD) operations on profiles. In addition, the seller profile can perform CRUD operations (create, read, update and delete ) on products. It has a dynamic carting system that allows customers to dynamically change the number of products in their carts, remove items from them, and empty them. Finally, there is a checkout system for buyers and customers can view their order history after completing order.
+                                </p>
+                            </div>
 
-                    <img class="six" src="images/amike work 7.jpg" alt="photo 6">
+                            <div class="techStack">
+                                <ul>
+                                    <li> REACT </li>
+                                    <li> EXPRESS </li>
+                                    <li> NODE JS </li>
+                                    <li> Mongo DB </li>
+                                </ul>
+                            </div>
 
-                    <img class="seven" src="images/amike work 3.jpg" alt="photo 7">
+                        </div>
+                    
+                    </div>
 
-                    <img class="eight" src="images/amike work 8.jpg" alt="photo 8">
+                    <div class="four">
+
+                        <img src="images/gallery-page.jpeg" alt="gallery-page">
+
+                        <ul class="gallery">
+                            <li> <a href="https://hardarmyyy.github.io/MY-GALLERY-PAGE/" target="_blank"> VIEW LIVE </a> </li>
+                            <li> <a href="https://github.com/Hardarmyyy/MY-GALLERY-PAGE" target="_blank"> SOURCE CODE </a> </li>
+                        </ul>
+
+                        <div class="project">
+
+                            <div class="projectInfo">
+                                <p>
+                                    A static gallery project where I display some of the user gallery photos using grid.
+                                </p>
+                            </div>
+
+                            <div class="techStack gall">
+                                <ul>
+                                    <li> HTML </li>
+                                    <li> CSS </li>
+                                    <li> Flexbox</li>
+                                    <li> Grid </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="two">
+
+                        <img src="images/movie-application.jpeg" alt="movie-application">
+
+                        <ul class="movie">
+                            <li> <a href="https://movie-app-ivory-pi.vercel.app/" target="_blank"> VIEW LIVE </a> </li>
+                            <li> <a href="https://github.com/Hardarmyyy/MOVIE-APP" target="_blank"> SOURCE CODE </a> </li>
+                        </ul>
+
+                        <div class="project">
+
+                            <div class="projectInfo">
+                                <p>
+                                    A react-application that allows users to search for movies, look up movie details, and watch trailers.
+                                </p>
+                            </div>
+
+                            <div class="techStack mov">
+                                <ul>
+                                    <li> REACT </li>
+                                    <li> CONTEXT API </li>
+                                    <li> REACT-ROUTER </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="three">
+
+                        <img  src="images/windbnd.jpeg" alt="wind-bnb-app">
+
+                        <ul class="windbnb">
+                            <li> <a href="https://wind-bnb-app.vercel.app/" target="_blank"> VIEW LIVE </a> </li>
+                            <li> <a href="https://github.com/Hardarmyyy/WindBnB-APP" target="_blank"> SOURCE CODE </a> </li>
+                        </ul>
+
+                        <div class="project">
+
+                            <div class="projectInfo">
+                                <p>
+                                    A single-page application that allows users to filter properties by location and number of guests.
+                                </p>
+                            </div>
+
+                            <div class="techStack">
+                                <ul>
+                                    <li> REACT </li>
+                                    <li> CONTEXT API </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div> <!-- .portfolio_photo_cont  -->
 
             </div> <!-- .portfolio_container -->
 
         </section> <!-- #portfolio  -->
-
-        <section id="price">
-
-            <div class="price_container">
-
-                <div class="price_content">
-
-                    <p class="sub_title">CHOOSE A PLAN</p>
-
-                    <h1>Pricing Plan</h1>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-
-                    <div class="border_bottom"></div> <!-- Add a centralized border bottom here  -->
-
-                </div>
-
-                <div class="price_list">
-
-                    <div class="plan">
-
-                        <p class="plan_heading">Basic</p>
-
-                        <div class="pricetag">
-
-                            <p>&#36;</p>
-
-                            <h1>50</h1>
-
-                        </div>
-
-                        <div class="package">
-
-                            <p>5GB Storage Space</p>
-
-                            <p>20GB Monthly Bandwith</p>
-
-                            <p>My SQL Databases</p>
-
-                            <p>100 Email Account</p>
-
-                            <p>100 Free Domain Names</p>
-
-                        </div>
-
-                        <a href="">Purchase</a> 
-
-                    </div>
-
-                    <div class="plan entity">
-
-                        <p class="entity">Recommended</p>
-
-                        <p class="plan_heading">Standard</p>
-
-                        <div class="pricetag">
-
-                            <p>&#36;</p>
-
-                            <h1>80</h1>
-
-                        </div>
-
-                        <div class="package">
-
-                            <p>5GB Storage Space</p>
-
-                            <p>20GB Monthly Bandwith</p>
-
-                            <p>My SQL Databases</p>
-
-                            <p>100 Email Account</p>
-
-                            <p>100 Free Domain Names</p>
-
-                        </div>
-
-                        <a href="" class="checked">Purchase</a> 
-
-                    </div>
-
-                    <div class="plan">
-
-                        <p class="plan_heading">Premium</p>
-
-                        <div class="pricetag">
-
-                            <p>&#36;</p>
-
-                            <h1>160</h1>
-
-                        </div>
-
-                        <div class="package">
-
-                            <p>5GB Storage Space</p>
-
-                            <p>20GB Monthly Bandwith</p>
-
-                            <p>My SQL Databases</p>
-
-                            <p>100 Email Account</p>
-
-                            <p>100 Free Domain Names</p>
-
-                        </div>
-
-                        <a href="">Purchase</a> 
-
-                    </div>
-
-                </div> <!-- .price_list  -->
-
-                <div class="price_icon">
-
-                    <div class="price_icon_cont">
-
-                        <div class="p_icon">
-        
-                            <i class='fas fa-users'></i>
-        
-                            <h2>47</h2>
-        
-                            <p>Clients</p>
-        
-                        </div>
-        
-                        <div class="p_icon">
-        
-                            <i class="fa fa-codepen"></i>
-        
-                            <h2>64</h2>
-        
-                            <p>Projects</p>
-                            
-                        </div>
-        
-                        <div class="p_icon">
-        
-                            <i class="fa fa-diamond"></i>
-        
-                            <h2>16</h2>
-        
-                            <p>Awards</p>
-                            
-                        </div>
-        
-                        <div class="p_icon">
-        
-                            <i class="fa fa-github"></i>
-        
-                            <h2>10</h2>
-        
-                            <p>Years Experience</p>
-                            
-                        </div>
-
-                    </div> <!-- .price_icon_cont  -->
-    
-                </div> <!-- .price_icon  -->
-
-            </div> <!-- price_container -->
-
-        </section> <!-- #price  -->
-
-        <section id="client">
-
-            <div class="client_container">
-
-                <div class="testimonial">
-
-                    <p class="sub_title">OUR TESTIMONIALS</p>
-
-                    <h1>Happy Clients <br>
-                        Says</h1>
-
-                    <p>Phasellus accumsan scelerisque dolor, quis mattis justo  varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-
-                    <p>enim elementum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere</p>
-
-                    <a href="">Learn More</a>
-
-                </div>
-
-                <div class="review_cont">
-
-                    <div class="review_card_cont">
-
-                        <div class="review_card">
-
-                            <i class="fa fa-quote-right"></i>
-
-                            <div class="review">
-
-                                <p><em>"In promotion and of advertising testimonial show consiss of a person's written orsoken statement extolling the virtue"</em></p>
-                                
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-
-                            </div>
-
-                        </div>
-
-                    </div> <!-- .review_card_cont  -->
-
-                    <div class="client_card_cont">
-
-                        <div class="client_card">
-
-                            <img src="images/amike client 1 maria.jpg" alt="client photo">
-
-                            <div>
-                                <p>Maria Doe</p>
-                                <p>Co Founder of Axis</p>
-                            </div>
-
-                        </div>
-
-                        <div>
-
-                            <a href="#" class="previous round">&#8249;</a>
-                            <a href="#" class="next round">&#8250;</a>
-
-                        </div>
-
-                    </div> <!-- .client_card  -->
-
-                </div> <!-- .review_cont  -->
-
-            </div> <!-- client_container  -->
-
-        </section> <!-- #client  -->
-
-        <section id="brand">
-
-            <div class="brand_container">
-
-                <img src="images/golden grid.png" alt="golden grid brand photo">
-
-                <img src="images/climb.png" alt="climb the mountain brand photo">
-
-                <img src="images/sweety.png" alt="sweety cafetaria brand photo">
-
-                <img src="images/fastlane.png" alt="fastlane brand photo">
-
-                <img src="images/ron jones.png" alt="ron jones brand photo">
-
-            </div> <!-- .brand_container  -->
-
-        </section> <!-- #brand -->
-
-        <section id="blog">
-
-            <div class="blog_container">
-
-                <div class="blog_content">
-
-                    <p class="sub_title">LATEST POST</p>
-
-                    <h1>Latest Blog</h1>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
-
-                </div>
-
-                <div class="border_bottom"></div> <!-- Add a centralized border bottom here  -->
-
-                <div class="blog_card_cont">
-
-                    <div class="blog_card">
-
-                        <img src="images/amike blog image 1.jpg" alt="blog photo one">
-
-                        <div class="blogg">
-
-                            <i class='fas fa-user-alt'></i> <span class="by_word">By</span> <a href="" class="admin">admin</a>
-
-                            <i class='far fa-calendar'></i> <span class="day">Tuesday</span> 
-
-                            <i class='fas fa-comments'></i> <span class="num">3</span>
-
-                        </div>
-
-                        <p>Ten Secrets You Will Not Want To Know</p>
-
-                        <a href="#">Read More <i class='fas fa-arrow-circle-right'></i></a>
-
-                    </div>
-
-                    <div class="blog_card">
-
-                        <img src="images/amike blog image 2.jpg" alt="blog photo two">
-
-                        <div class="blogg">
-
-                            <i class='fas fa-user-alt'></i> <span class="by_word">By</span> <a href="" class="admin">admin</a>
-
-                            <i class='far fa-calendar'></i> <span class="day">Wednesday</span> 
-
-                            <i class='fas fa-comments'></i> <span class="num">3</span>
-
-                        </div>
-
-                        <p>You've gotta dance like there's nobody watching</p>
-
-                        <a href="#">Read More <i class='fas fa-arrow-circle-right'></i></a>
-
-                    </div>
-
-                    <div class="blog_card">
-
-                        <img src="images/amike blog image 3.jpg" alt="blog photo three">
-
-                        <div class="blogg">
-
-                            <i class='fas fa-user-alt'></i> <span class="by_word">By</span> <a href="" class="admin">admin</a>
-
-                            <i class='far fa-calendar'></i> <span class="day">Saturday</span>
-
-                            <i class='fas fa-comments'></i> <span class="num">3</span>
-
-                        </div>
-
-                        <p>I must explain to you how all this mistaken idea</p>
-
-                        <a href="#">Read More <i class='fas fa-arrow-circle-right'></i></a>
-
-                    </div>
-
-                </div> <!-- .blog_card_cont  -->
-
-            </div> <!-- .blog_container  -->
-
-        </section> <!-- #blog -->
 
         <section id="contact">
 
@@ -689,74 +358,39 @@
 
                     <h1>Contact Me</h1>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
+                    <p>Need a website? Or need a hand in a project? Send me a message and let's discuss the details!</p>
 
                 </div>
 
                 <div class="border_bottom"></div> <!-- Add a centralized border bottom here  -->
 
-                <div class="contact_method">
-
-                    <div class="method">
-
-                        <i class='fas fa-map-marker-alt'></i>
-
-                        <div class="method_type">
-
-                            <p>Locate us</p>
-
-                            <p>King Street, Melbourne Victoria</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="method">
-
-                        <i class="fa fa-phone"></i>
-
-                        <div class="method_type">
-
-                            <p>Give us a call</p>
-
-                            <p>Office: +01-2345-6789</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="method">
-
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-
-                        <div class="method_type">
-
-                            <p>Get in online</p>
-
-                            <p>contact@example.com</p>
-
-                        </div>
-
-                    </div>
-
-                </div> <!-- .contact_method  -->
-
                 <div class="contact_form">
 
-                    <form action="" method="" enctype="" autocomplete="" class="form">
+                    <form action="https://formspree.io/f/mgejkjja" method="post" id="my-form">
 
                         <div class="name_email">
-
-                            <input type="text" id="name" placeholder="Your Name" required>
-
-                            <input type="email" id="email" placeholder="Your Email" required>
-
+                            <div>
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                                <p id="emptyName"></p>
+                            </div>
+                            <div>
+                                <input type="text" name="email" id="email" placeholder="Your Email">
+                                <p id="emptyEmail"></p>
+                            </div>
                         </div> <br>
 
-                        <input type="text" id="subject" placeholder="Your Subject" required> <br>
-                        <br>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea> <br>
-                        <br>
+                        <div class="form">
+                            <input type="text" name="subject" id="subject" placeholder="Your Subject">
+                            <p id="emptySubject"></p>
+                        </div>
+
+                        <div class="form">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <p id="emptyTextarea"></p>
+                        </div>
+
+                        <p id="my-form-status"></p>
+
                         <input type="submit" value="Send Message">
 
                     </form>
@@ -771,30 +405,11 @@
 
     <footer>
 
-        <div class="footer_container">
-
-            <div class="footer_content">
-
-                <img src="images/amike navbar logo.png" alt="logo">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                <div class="footer_icon">
-
-                    <a href=""><i class="fa fa-facebook-f"></i></a>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-instagram"></i></a>
-                    <a href=""><i class="fa fa-pinterest"></i></a>
-
-                </div>
-
-            </div> <!-- .footer_content  -->
-
-            <p>Copyright &copy; <a class="foot" href="#home">Ami.Ke</a> All Rights Reserved by ThemeBing.</p>
-
-        </div> <!-- .footer_container  -->
+        <p>Copyright &copy; <a class="foot" href="#home">Adams</a> All Rights Reserved.</p>
 
     </footer>
+
+    <script src="scripts/main.js"></script>
 
 </body>
 </html>

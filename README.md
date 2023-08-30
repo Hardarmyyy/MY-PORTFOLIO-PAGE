@@ -117,7 +117,7 @@ rspec spec
 
 👤 **Adeyemo Adams**
 
-- GitHub: [@githubhandle](https://github.com/Hardarmyyy)
+- GitHub: [https://github.com/Hardarmyyy]
 <!-- - Twitter: [@twitterhandle](https://twitter.com/profsain)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/profsain) -->
 
