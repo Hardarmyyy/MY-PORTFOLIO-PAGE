@@ -168,12 +168,14 @@ async function handleSubmit(event) {
             emptySubject.innerText = "please enter a subject in the field above"
             emptyTextarea.innerText = "Kindly enter your message in the field above"
         } else {
-            status.innerHTML = "Oops! There was a problem submitting your form"
+            status.innerHTML = "Sorry! There was a problem submitting your form"
+            status.style.color = "#FF4A57"
         }
         })
     }
     }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.style.color = "#FF4A57"
     });
 }
 form.addEventListener("submit", handleSubmit)
