@@ -41,51 +41,17 @@ menuIcon.addEventListener('click', () => {
 })
 
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
+/* Close when someone clicks on button or link tag inside the overlay */
 
-const closeIcon = document.querySelector('.closebtn');
+window.addEventListener('click', (e) => {
+    const closeBtn = document.querySelector(`a[class="${e.target.className}"]`)
+    const closeIcon = document.querySelector(`i[class="${e.target.className}"]`)
 
-closeIcon.addEventListener('click', () => {
-    document.getElementById("myNav").style.width = "0%";
-    menuIcon.style.display = "block";
+    if (closeBtn || closeIcon) {
+        document.getElementById("myNav").style.width = "0%";
+        menuIcon.style.display = "block";
+    }
 })
-
-
-const closeHome = document.querySelector('.closeHome');
-
-closeHome.addEventListener('click', () => {
-    document.getElementById("myNav").style.width = "0%";
-    menuIcon.style.display = "block";
-})
-
-const closeAbout = document.querySelector('.closeAbout');
-
-closeAbout.addEventListener('click', () => {
-    document.getElementById("myNav").style.width = "0%";
-    menuIcon.style.display = "block";
-})
-
-const closeSkill = document.querySelector('.closeSkill');
-
-closeSkill.addEventListener('click', () => {
-    document.getElementById("myNav").style.width = "0%";
-    menuIcon.style.display = "block";
-})
-
-const closePortfolio = document.querySelector('.closePortfolio');
-
-closePortfolio.addEventListener('click', () => {
-    document.getElementById("myNav").style.width = "0%";
-    menuIcon.style.display = "block";
-})
-
-const closeContact = document.querySelector('.closeContact');
-
-closeContact.addEventListener('click', () => {
-    document.getElementById("myNav").style.width = "0%";
-    menuIcon.style.display = "block";
-})
-
 
 
 // contact form submission
