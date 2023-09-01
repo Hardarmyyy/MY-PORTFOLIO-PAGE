@@ -823,10 +823,9 @@ footer a {
         z-index: 1000;
         left: 0;
         top: 0;
-        background-color: rgb(0,0,0); 
-        background-color: rgba(0,0,0, 0.9); 
+        background-color: #1F2235; 
         overflow-x: hidden; 
-        transition: 0.5s;
+        transition: 0.6s;
     }
 
     /* Position the content inside the overlay */
@@ -836,6 +835,11 @@ footer a {
         width: 100%;
         text-align: center;
         margin-top: 30px;
+    }
+
+    .overlay-content div {
+        width: 600px;
+        text-align: center;
     }
 
     /* The navigation links inside the overlay */
@@ -1066,6 +1070,11 @@ footer a {
         right: 20%;
     }
 
+    .overlay-content div {
+        width: 480px;
+        text-align: center;
+    }
+
     .skill_container {
         padding: 40px 50px 80px;
     }
@@ -1209,6 +1218,11 @@ footer a {
         right: 18%;
     }
 
+    .overlay-content div {
+        width: 425px;
+        text-align: center;
+    }
+
     .skill_container {
         padding: 40px 50px 80px;
     }
@@ -1348,6 +1362,11 @@ footer a {
     .home_btn {
         bottom: 7%;
         right: 14%;
+    }
+
+    .overlay-content div {
+        width: 375px;
+        text-align: center;
     }
 
     .skill_container {
