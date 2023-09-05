@@ -489,7 +489,7 @@ input[type=submit] {
 }
 
 .contact_form input:focus, .contact_form textarea:focus {
-    border: 1.5px solid #FF4A57;
+    outline: 1.5px solid #FF4A57;
 }
 
 .contact_form textarea {
@@ -1008,7 +1008,7 @@ footer a {
     
     .name_email input[type=text] {
         width: 500px;
-        margin: 30px 0px 10px;
+        margin: 15px 0px 10px;
     }
 
     #email{
@@ -1017,28 +1017,36 @@ footer a {
 
     .form input[type=text] {
         width: 500px;
-        margin: 0px 0px 10px;
+        margin: -10px 0px 10px;
     }
     
     .form textarea {
         width: 500px;
-        margin: 30px 0px 10px;
+        margin: 20px 0px 10px;
     }
 
     input[type=submit] {
-        margin: 40px 0px 20px 55px;
+        margin: 20px 0px 20px 55px;
     }
     
     #emptyName{
         left: 9%;
+        top: 46%;
     }
 
     #emptyEmail{
         left: 6.5%;
+        top: 95%;
     }
     
-    #emptySubject, #emptyTextarea{
+    #emptySubject{
         left: 9%;
+        bottom: 57%;
+    }
+
+    #emptyTextarea{
+        left: 9%;
+        bottom: -2%;
     }
     
     #my-form-status {
@@ -1166,21 +1174,18 @@ footer a {
     
     .name_email input[type=text] {
         width: 420px;
-        margin: 30px 0px 10px;
     }
 
     .form input[type=text] {
         width: 420px;
-        margin: 0px 0px 10px;
     }
     
     .form textarea {
         width: 420px;
-        margin: 30px 0px 10px;
     }
 
     input[type=submit] {
-        margin: 40px 0px 20px 30px;
+        margin: 20px 0px 20px 30px;
     }
     
     #emptyName{
@@ -1306,21 +1311,18 @@ footer a {
     
     .name_email input[type=text] {
         width: 390px;
-        margin: 30px 0px 10px;
     }
 
     .form input[type=text] {
         width: 390px;
-        margin: 0px 0px 10px;
     }
     
     .form textarea {
         width: 390px;
-        margin: 30px 0px 10px;
     }
 
     input[type=submit] {
-        margin: 40px 0px 20px 20px;
+        margin: 20px 0px 20px 20px;
     }
     
     #emptyName{
@@ -1452,21 +1454,18 @@ footer a {
     
     .name_email input[type=text] {
         width: 350px;
-        margin: 30px 0px 25px;
     }
 
     .form input[type=text] {
         width: 350px;
-        margin: 0px 0px 25px;
     }
     
     .form textarea {
         width: 350px;
-        margin: 30px 0px 25px;
     }
 
     input[type=submit] {
-        margin: 40px 0px 20px 20px;
+        margin: 20px 0px 20px 20px;
     }
     
     #emptyName{

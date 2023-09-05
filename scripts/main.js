@@ -56,6 +56,17 @@ window.addEventListener('click', (e) => {
 
 // contact form submission
 
+// define an object constructor for the contact information;
+class Contact {
+    constructor (name, email, subject, messageBody) {
+        this.name = name;
+        this.email = email;
+        this.subject = subject;
+        this.messageBody = messageBody;
+    }
+}
+
+// check and validate the form fields;
 let clientName = document.getElementById("name");
 let clientEmail = document.getElementById("email");
 let subject = document.getElementById("subject");
@@ -107,12 +118,16 @@ messageBody.addEventListener("input", () => {
     }
 })
 
+
+// submit the form;
 var form = document.getElementById("my-form");
 
 async function handleSubmit(event) {
     event.preventDefault();
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
+    let status = document.getElementById("my-form-status");
+
+    let data = new FormData(event.target);
+
     fetch(event.target.action, {
     method: form.method,
     body: data,
@@ -120,21 +135,37 @@ async function handleSubmit(event) {
         'Accept': 'application/json'
     }
     }).then(response => {
-    if (response.ok) {
+        console.log(response)
+    if (response.ok && clientName.value && clientEmail.value && subject.value && messageBody.value) {
         status.innerHTML = "Thanks for your submission!";
         form.reset()
         setTimeout(() => {
             status.innerHTML = ''
         }, 4000)
-    } else {
+    } 
+    // else if (response.ok && !clientName.value) {
+    //     emptyName.innerText = "Kindly enter your name in the field above"
+    // } 
+    // else if (response.ok && !clientEmail.value) {
+    //     emptyEmail.innerText = "Please enter a valid email in the field above"
+    // } 
+    // else if (response.ok && !subject.value) {
+    //     emptySubject.innerText = "please enter a subject in the field above"
+    // }
+    // else if (response.ok && !messageBody.value) {
+    //     emptyTextarea.innerText = "Kindly enter your message in the field above"
+    // }
+    else {
         response.json().then(data => {
+            console.log(data)
         if (Object.hasOwn(data, 'errors')) {
             emptyName.innerText = "Kindly enter your name in the field above"
             emptyEmail.innerText = "Please enter a valid email in the field above"
             emptySubject.innerText = "please enter a subject in the field above"
             emptyTextarea.innerText = "Kindly enter your message in the field above"
-        } else {
-            status.innerHTML = "Sorry! There was a problem submitting your form"
+        } 
+        else {
+            status.innerHTML = "Sorry! All fields are required"
             status.style.color = "#FF4A57"
         }
         })
@@ -142,6 +173,9 @@ async function handleSubmit(event) {
     }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
         status.style.color = "#FF4A57"
+        setTimeout(() => {
+            status.innerHTML = ''
+        }, 4000)
     });
 }
 form.addEventListener("submit", handleSubmit)
