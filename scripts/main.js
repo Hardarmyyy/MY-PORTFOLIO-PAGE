@@ -164,10 +164,10 @@ async function handleSubmit(event) {
             emptySubject.innerText = "please enter a subject in the field above"
             emptyTextarea.innerText = "Kindly enter your message in the field above"
         } 
-        else {
-            status.innerHTML = "Sorry! All fields are required"
-            status.style.color = "#FF4A57"
-        }
+        // else {
+        //     status.innerHTML = "Sorry! All fields are required"
+        //     status.style.color = "#FF4A57"
+        // }
         })
     }
     }).catch(error => {

@@ -478,7 +478,7 @@ body::-webkit-scrollbar-thumb:hover {
 input[type=submit] {
     background-color: #FF4A57;
     color: #FFFFFF;
-    padding:10px 40px;
+    padding: 10px 40px;
     border: none;
     margin: 20px 0px 20px 175px;
     border-radius: 50px;
@@ -489,8 +489,7 @@ input[type=submit] {
 }
 
 .contact_form input:focus, .contact_form textarea:focus {
-    outline: 1.5px solid #FF4A57;
-    border-radius: 5px;
+    border: 1.5px solid #FF4A57;
 }
 
 .contact_form textarea {
@@ -508,14 +507,14 @@ input[type=submit] {
     color: #FF4A57;
     font-size: 12px;
     position: absolute;
-    left: 13%;
+    left: 12.7%;
 }
 
 #my-form-status {
     color: #FFFFFF;
     font-size: 12px;
     position: absolute;
-    left: 13%;
+    left: 12.7%;
 }
 
 #emptyEmail {
@@ -545,11 +544,11 @@ footer a {
     } 
 
     #emptySubject, #emptyTextarea{
-        left: 14.7%;
+        left: 14.9%;
     }
     
     #my-form-status {
-        left: 14.7%;
+        left: 14.9%;
     } 
 }
 
