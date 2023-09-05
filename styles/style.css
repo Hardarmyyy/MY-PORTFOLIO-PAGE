@@ -490,6 +490,7 @@ input[type=submit] {
 
 .contact_form input:focus, .contact_form textarea:focus {
     outline: 1.5px solid #FF4A57;
+    border-radius: 5px;
 }
 
 .contact_form textarea {
